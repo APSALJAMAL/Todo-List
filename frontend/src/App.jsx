@@ -83,9 +83,10 @@ export default function App() {
             <Route path='/reset-password/:email' element={<ResetPassword />} />
             <Route path='*' element={<NotFoundPage />} />
 
-            <Route path='/todolist' element={<TodoList/>} />
+            
 
             <Route element={<PrivateRoute />}>
+              <Route path='/todolist' element={<TodoList/>} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/about' element={<About />} />
             <Route path='/getposts' element={<Post />} />
